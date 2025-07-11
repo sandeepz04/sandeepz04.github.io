@@ -30,6 +30,13 @@
       margin-bottom: 20px;
       border-radius: 10px;
     }
+    article a {
+      color: #87cefa;
+      text-decoration: none;
+    }
+    article a:hover {
+      text-decoration: underline;
+    }
     footer {
       text-align: center;
       font-size: 12px;
@@ -43,20 +50,20 @@
 <header>
   <h1>⚛️ Nuclear Medicine by Sandeep</h1>
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Experiments</a>
+    <a href="index.html">Home</a>
+    <a href="#experiments">Experiments</a>
     <a href="#">About</a>
   </nav>
 </header>
 
-<div class="content">
+<div class="content" id="experiments">
   <article>
-    <h2>🔬 Color Change after DTPA Addition</h2>
+    <h2><a href="experiment1.html">🔬 Color Change after DTPA Addition</a></h2>
     <p>Observed yellow-green complex formation possibly due to Fe³⁺–DTPA. Exploring oxidation pathways in presence of air and HCl.</p>
   </article>
 
   <article>
-    <h2>🧪 Testing Plastic Compatibility with Ga-68 Eluate</h2>
+    <h2><a href="experiment2.html">🧪 Testing Plastic Compatibility with Ga-68 Eluate</a></h2>
     <p>Used IV cannula material suspected to leach. Testing interactions using peroxide and acid media.</p>
   </article>
 </div>
