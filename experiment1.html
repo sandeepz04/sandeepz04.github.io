@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Experiment 1 - DTPA Color Change</title>
+  <title>Fe Impurity Detection in Ga-68 Eluate via DTPA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body { background-color: #111; color: #eee; font-family: sans-serif; padding: 20px; }
-    a { color: #80dfff; }
+    body {
+      background-color: #111;
+      color: #e6f2ff;
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+    }
+    header {
+      background: #0b3d91;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 { margin: 0; font-size: 26px; }
+    .content {
+      padding: 20px;
+    }
+    a {
+      color: #87cefa;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      padding: 10px;
+      color: gray;
+    }
   </style>
 </head>
 <body>
-  <h1>🔬 Experiment 1: DTPA Color Change</h1>
-  <p>Observed yellow-green complex formation, possibly due to Fe³⁺–DTPA interaction. Hypothesis: air oxidation of Fe²⁺ during HCl-DTPA reaction.</p>
-  <a href="index.html">← Back to homepage</a>
+
+<header>
+  <h1>🔬 Detecting Iron Impurity in Ga-68 Eluate using DTPA</h1>
+</header>
+
+<div class="content">
+  <p>
+    During routine radiolabelling with Ga-68, an unusual observation was made. After elution of the generator and subsequent labelling, the eluate stored in a glass vial turned **greenish** after approximately **48 hours**. This raised concerns about possible metal impurities, especially **iron**.
+  </p>
+
+  <p>
+    It was suspected that the impurity may have been introduced via the **needle or cannula** used during elution. To confirm this, **hydrogen peroxide** and **DTPA** (diethylenetriaminepentaacetic acid) were added to the same vial. The solution turned **bright yellow immediately**, indicating a chemical reaction — likely the formation of an **iron–DTPA complex**.
+  </p>
+
+  <p>
+    DTPA is an **acyclic pentadentate chelating ligand** that quickly forms stable complexes with metal ions at room temperature. It binds Fe³⁺ very strongly, and the resulting **[Fe(DTPA)]²⁻** complex exhibits a characteristic **yellow color** due to Fe³⁺’s electronic transitions. This confirmed the presence of **oxidized iron (Fe³⁺)** in the eluate — probably converted from Fe²⁺ via atmospheric oxygen or peroxide.
+  </p>
+
+  <p>
+    This observation is crucial in the context of **Ga-68 radiolabelling**. Competing metal ions like Fe³⁺ can interfere with chelator-based binding, particularly with sensitive systems like:
+    <ul>
+      <li>🔸 **DOTA** – used for peptides like DOTA-TATE or DOTA-TOC</li>
+      <li>🔸 **HBED-CC** – used in Ga-68 PSMA-11</li>
+    </ul>
+    Both chelators can potentially form side complexes with Fe³⁺, reducing radiochemical yield or affecting biodistribution.
+  </p>
+
+  <p>
+    The **stability constant** (log K) for HBED-CC with Fe³⁺ is **very high** (~38), comparable to that with Ga³⁺ (~39), indicating **strong competition**.<br>
+    <strong>Ref:</strong> Zhernosekov et al., J Nucl Med 2007; **48(10):1741–1748**.  
+    <a href="https://jnm.snmjournals.org/content/48/10/1741" target="_blank">Read full paper</a>
+  </p>
+
+  <p>
+    This incident highlights how even minor metallic contamination — from something as routine as a needle — can critically impact the **efficacy, safety, and reproducibility** of radiopharmaceutical preparation.
+  </p>
+
+  <p><a href="index.html">← Back to Home</a></p>
+</div>
+
+<footer>
+  © 2025 Sandeep Yadav
+</footer>
+
 </body>
 </html>
