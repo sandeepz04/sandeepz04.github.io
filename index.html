@@ -1,46 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nuclear Medicine insights</title>
+  <title>Radioactive Reactions – Nuclear Medicine Blog by Sandeep</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore nuclear medicine experiments, radiopharmaceutical chemistry, and radiation safety from a hot lab perspective – by Sandeep Yadav." />
+  <meta name="keywords" content="Nuclear Medicine, Ga-68, PSMA, DTPA, Radiolabelling, Radiation Safety, Radiopharmaceuticals, Hot Lab" />
+  <meta name="author" content="Sandeep Yadav" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sandeepz04.github.io/" />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       background-color: #111;
       color: #e6f2ff;
-      font-family: 'Arial', sans-serif;
-      margin: 0; padding: 0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
     header {
       background: #0b3d91;
       padding: 20px;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    h1 { margin: 0; font-size: 28px; }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
     nav a {
       margin: 10px;
       color: #fff;
       text-decoration: none;
+      font-weight: bold;
     }
-    .content {
-      padding: 20px;
-    }
-    article {
-      background: #1a1a1a;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-    }
-    article a {
-      color: #87cefa;
-      text-decoration: none;
-    }
-    article a:hover {
+    nav a:hover {
       text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #87cefa;
+    }
+    .card a {
+      color: #00d9ff;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
     }
     footer {
       text-align: center;
       font-size: 12px;
-      padding: 10px;
+      padding: 20px;
       color: gray;
     }
   </style>
@@ -48,24 +72,55 @@
 <body>
 
 <header>
-  <h1>⚛️ Dose of clarity in decaying world </h1>
+  <h1>⚛️ Radioactive Reactions</h1>
   <nav>
-    <a href="index.html">Home</a>
+    <a href="#home">Home</a>
     <a href="#experiments">Experiments</a>
-    <a href="#">About</a>
+    <a href="#about">About</a>
   </nav>
 </header>
 
-<div class="content" id="experiments">
-  <article>
-    <h2><a href="experiment1.html">🔬 Color Change after DTPA Addition</a></h2>
-    <p>Observed yellow-green complex formation possibly due to Fe³⁺–DTPA. Exploring oxidation pathways in presence of air and HCl.</p>
-  </article>
+<section id="home">
+  <h2>Welcome to My Nuclear Medicine Blog</h2>
+  <p>
+    Dive into firsthand experiences, observations, and chemical insights from the world of radiopharmaceutical science.  
+    This is a place where I share lab experiment.
+  </p>
+</section>
 
-</div>
+<section id="experiments">
+  <h2>🧪 Experiments</h2>
+
+  <div class="card">
+    <h3>Fe Impurity Detection in Ga-68 Eluate</h3>
+    <p>
+      After 48 hours, a green coloration was observed in Ga-68 eluate due to suspected Fe²⁺ contamination. On adding DTPA, a yellow complex formed instantly — likely Fe³⁺–DTPA. This finding is vital for Ga-68 radiolabelling chemistry.
+    </p>
+    <a href="experiment1.html">🔬 Read Full Experiment →</a>
+  </div>
+
+  <!-- More experiment cards can be added below -->
+</section>
+
+<section id="about">
+  <h2>👤 About Me</h2>
+  <p>
+    I'm <strong>Sandeep Yadav</strong>, a nuclear medicine professional.  
+    I specialize in:
+  </p>
+  <ul>
+    <li>• Radiolabelling diagnostic and therapeutic agents (Ga-68, Lu-177)</li>
+    <li>• Preparing and handling radiopharmaceuticals like PSMA, DOTA-TATE</li>
+    <li>• Radiation protection, shielding, and safety compliance</li>
+    <li>• Identifying and troubleshooting chemical impurities in hot lab work</li>
+  </ul>
+  <p>
+    This blog documents my lab experiments and aims to educate and inspire others in the nuclear medicine field.
+  </p>
+</section>
 
 <footer>
-  © 2025 Sandeep Yadav | Nuclear Medicine Insights
+  © 2025 Sandeep Yadav | Radioactive Reactions
 </footer>
 
 </body>
