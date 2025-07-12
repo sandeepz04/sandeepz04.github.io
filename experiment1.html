@@ -8,20 +8,38 @@
       background-color: #111;
       color: #e6f2ff;
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
+      margin: 0;
+      padding: 0;
     }
     header {
       background: #0b3d91;
       padding: 20px;
       text-align: center;
     }
-    h1 { margin: 0; font-size: 26px; }
+    h1 {
+      margin: 0;
+      font-size: 26px;
+    }
     .content {
       padding: 20px;
     }
     a {
       color: #87cefa;
       text-decoration: none;
+    }
+    figure {
+      text-align: center;
+      margin: 30px 0;
+    }
+    figcaption {
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    img {
+      max-width: 90%;
+      border-radius: 10px;
+      border: 2px solid #333;
     }
     footer {
       text-align: center;
@@ -34,38 +52,57 @@
 <body>
 
 <header>
-  <h1>⚛️ Radioactive Reactions: Experiments from the Hot Lab</h1>
+  <h1>🔬 Detecting Iron Impurity in Ga-68 Eluate using DTPA</h1>
 </header>
 
 <div class="content">
   <p>
-    During routine Ga-68 generator elution and radiolabelling, an unusual incident was observed. A vial containing Ga-68 eluate turned green after approximately 48 hours. This unexpected color change raised suspicion of metal contamination, likely introduced from a metal needle or cannula during the elution or labelling process.
+    During routine radiolabelling with Ga-68, an unusual observation was made. After elution of the generator and subsequent labelling, the eluate stored in a glass vial turned <strong>greenish</strong> after approximately <strong>48 hours</strong>. This raised concerns about possible metal impurities, especially <strong>iron</strong>.
+  </p>
+
+  <figure>
+    <img src="IMG_20250707_121829.jpg" alt="Green coloration in Ga-68 eluate" />
+    <figcaption>Fig 1: Greenish eluate after 48 hours — suspected Fe²⁺ contamination.</figcaption>
+  </figure>
+
+  <p>
+    It was suspected that the impurity may have been introduced via the <strong>needle or cannula</strong> used during elution. To confirm this, <strong>hydrogen peroxide</strong> and <strong>DTPA</strong> were added. The solution turned <strong>bright yellow immediately</strong>, indicating formation of an iron complex.
+  </p>
+
+  <figure>
+    <img src="IMG_20250711_201138.jpg" alt="Yellow color of Fe3+ DTPA complex" />
+    <figcaption>Fig 2: Yellow color formed instantly after DTPA addition — indicating Fe³⁺–DTPA complex.</figcaption>
+  </figure>
+
+  <p>
+    DTPA is an <strong>acyclic pentadentate chelating ligand</strong> that forms stable complexes with metal ions at room temperature. It binds Fe³⁺ strongly, and the resulting <code>[Fe(DTPA)]²⁻</code> complex is yellow due to Fe³⁺’s electronic transitions. This confirmed the presence of <strong>oxidized iron (Fe³⁺)</strong> in the eluate — likely from Fe²⁺ oxidation.
   </p>
 
   <p>
-    The green color suggested the presence of Fe²⁺, which is pale green in solution. To investigate further, hydrogen peroxide (to oxidize Fe²⁺ to Fe³⁺) and DTPA (diethylenetriaminepentaacetic acid) were added. The solution immediately turned bright yellow — strongly indicating formation of a Fe³⁺–DTPA complex.
+    This matters in Ga-68 radiolabelling, where metal ion impurities can reduce chelator efficiency. Chelators like:
+    <ul>
+      <li>🔸 <strong>DOTA</strong> – used in DOTA-TATE, DOTA-TOC</li>
+      <li>🔸 <strong>HBED-CC</strong> – used in Ga-68 PSMA-11</li>
+    </ul>
+    are sensitive to competing metal ions. Fe³⁺ can strongly bind HBED-CC, reducing Ga³⁺ incorporation.
   </p>
 
   <p>
-    DTPA is an acyclic chelator with five carboxyl and three amine groups, allowing rapid and stable complexation with metal ions like Fe³⁺ at room temperature. The yellow color corresponds to Fe³⁺ complexes with DTPA, confirming oxidation and complexation in real-time.
+    The <strong>stability constant</strong> for HBED-CC with Fe³⁺ is log K ≈ 36.74, nearly as high as for Ga³⁺ (log K ≈ 37.73).  
+    <br>
+    <strong>Reference:</strong> Wadas et al., J Nucl Med Biol (2010) — cited by Zhernosekov et al., J Nucl Med 2007; 48(10):1741–1748.  
+    <a href="https://jnm.snmjournals.org/content/48/10/1741" target="_blank">Read Full Paper</a>
   </p>
 
   <p>
-    This is particularly relevant in Ga-68 radiolabelling workflows. Fe³⁺, even in trace amounts, can compete with Ga³⁺ for chelators like DOTA or HBED-CC. According to Eppard et al. (2021), Fe³⁺ binds HBED-CC with high affinity and can significantly reduce radiolabelling efficiency, especially in PSMA-targeting radiopharmaceuticals. This has implications for radiochemical purity, biodistribution, and clinical efficacy.
-  </p>
-
-  <p>
-    <strong>Ref:</strong> Eppard E, de la Fuente A, Benesová M, et al.  
-    <i>The underestimated role of Fe(III) in radiolabelling with 68Ga.</i>  
-    <b>Pharmaceuticals</b>. 2021;14(9):855.  
-    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8424644/" target="_blank">Read the full paper</a>
+    This observation shows that even minor metal contamination — like from a cannula — can affect radiolabelling efficiency and reproducibility in the nuclear medicine lab.
   </p>
 
   <p><a href="index.html">← Back to Home</a></p>
 </div>
 
 <footer>
-  © 2025 Sandeep Yadav
+  © 2025 Sandeep Yadav | Radioactive Reactions
 </footer>
 
 </body>
